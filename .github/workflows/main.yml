@@ -2,23 +2,25 @@ name: README Auto Update
 
 on:
   schedule:
-    - cron: "0 */3 * * *"   # 3시간마다 실행
-  workflow_dispatch:        # 수동 실행
+    - cron: "0 */3 * * *"  # 3시간마다 실행
+  workflow_dispatch:       # 수동 실행
+
+permissions:
+  contents: write
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 저장소 불러오기
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Python 설정
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: README 업데이트 실행
+      - name: README 업데이트
         run: python update_readme.py
 
       - name: 변경사항 커밋
