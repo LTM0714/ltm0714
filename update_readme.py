@@ -1,5 +1,4 @@
 from datetime import datetime
-import requests
 
 with open("README.md", "r", encoding="utf-8") as f:
     content = f.read()
