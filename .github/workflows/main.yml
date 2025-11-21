@@ -1,27 +1,30 @@
-name: README build
+name: README Auto Update
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
-  workflow_dispatch:
+    - cron: "0 */3 * * *"   # 3시간마다 실행
+  workflow_dispatch:        # 수동 실행
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Run script
-        run: python update_readme.py
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
 
-      - name: Commit & Push
-        run: |
-          git config --global user.name "GitHub Bot"
-          git config --global user.email "bot@github.com"
-          git add README.md
-          git commit -m "Auto update README" || echo "No changes"
-          git push
+    - name: Run README update script
+      run: python update_readme.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "actions@github.com"
+        git add README.md
+        git commit -m "Auto update README" || echo "No changes"
+        git push
