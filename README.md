@@ -56,8 +56,11 @@
 
 ------------
 <p align="center">This <i>README</i> file is generated <b>every 3 hours</b>!</br>
-Last Updated: <img src="https://img.shields.io/badge/updated-auto-green" alt="Last updated badge" /><br />
-🕒 현재 시간: {{TIME}}</p>
+Last Updated: <img src="https://img.shields.io/badge/updated-auto-green" alt="Last updated badge" /><br /></p>
+<p>🕒 현재 시간: {{TIME}}</p>
+<p>📝 최근 커밋: {{COMMIT}}</p>
+<h3>GitHub 통계</h3>
+<img src="https://github-readme-stats.vercel.app/api?username=LTM0714&show_icons=true" />
 
 <p align="center">
 <img src="https://github.com/thmsgbrt/thmsgbrt/workflows/README%20build/badge.svg" /> 
