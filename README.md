@@ -47,6 +47,9 @@
   <li><a href="https://medium.com/better-programming/8-new-features-shipping-with-es2020-7a2721f710fb"><b>7 New Features Shipping With ES2020</b></a><br/><i>GlobalThis, optional chaining, private fields in classes, the nullish coalescing operator, and more</i></li>
 </ul>
 
+<h3>GitHub 통계</h3>
+<img src="https://github-readme-stats.vercel.app/api?username=LTM0714&show_icons=true" />
+
 <h3>Where to find me</h3>
 
 <p><a href="https://github.com/ltm0714" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a>
@@ -56,14 +59,11 @@
 
 ------------
 <p align="center">This <i>README</i> file is generated <b>every 3 hours</b>!</br>
-Last Updated: <img src="https://img.shields.io/badge/updated-auto-green" alt="Last updated badge" /><br /></p>
-<p>🕒 현재 시간: {{TIME}}</p>
-<p>📝 최근 커밋: {{COMMIT}}</p>
-<h3>GitHub 통계</h3>
-<img src="https://github-readme-stats.vercel.app/api?username=LTM0714&show_icons=true" />
+Last Updated: <img src="https://img.shields.io/badge/updated-auto-green" alt="Last updated badge" /><br />
+🕒 현재 시간: {{TIME}} | 📝 최근 커밋: {{COMMIT}}</br></p>
 
 <p align="center">
-<img src="https://github.com/thmsgbrt/thmsgbrt/workflows/README%20build/badge.svg" /> 
-<img alt="Stars" src="https://img.shields.io/github/stars/LTM0714/LTM0714?style=flat-square&labelColor=343b41"/>
-<img alt="Forks" src="https://img.shields.io/github/forks/LTM0714/LTM0714?style=flat-square&labelColor=343b41"/>
+<Strong>Email 📧</Strong><br>lim2309043@gmail.com<br>
 </p>
+
+<br>
