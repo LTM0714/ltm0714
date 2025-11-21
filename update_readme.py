@@ -1,14 +1,11 @@
-import requests
+from datetime import datetime
 
-API_KEY = "YOUR_API_KEY"
-CITY = "Seoul"
+with open("README.md", "r", encoding="utf-8") as f:
+    content = f.read()
 
-url = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric&lang=kr"
-data = requests.get(url).json()
+now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-weather = data["weather"][0]["description"]
-temp = data["main"]["temp"]
+content = content.replace("{{TIME}}", now)
 
-weather_text = f"{CITY} 날씨: {temp}°C, {weather}"
-
-content = content.replace("{{WEATHER}}", weather_text)
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(content)
