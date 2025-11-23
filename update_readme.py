@@ -1,13 +1,15 @@
 from datetime import datetime
 
-with open("README.md", "r", encoding="utf-8") as f:
-    content = f.read()
+README_PATH = "README.md"
 
-# 1. 현재 시간
 now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+with open(README_PATH, "r", encoding="utf-8") as file:
+    content = file.read()
+
 content = content.replace("{{TIME}}", now)
 
-# 저장
-with open("README.md", "w", encoding="utf-8") as f:
+with open(README_PATH, "w", encoding="utf-8") as file:
+    file.write(content)
 
-    f.write(content)
+
